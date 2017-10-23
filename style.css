@@ -1,0 +1,339 @@
+/*!
+
+Theme Name: En sak i taget
+Theme URI: http://ensakitaget.se
+Description: En sak i taget - Malin Ingevall
+Author: Frida Gustafsson
+Version: 2.0
+
+*/
+@font-face {
+  font-family: 'BebasNeue-Book';
+  src: url("fonts/bebasneuebook.eot");
+  src: url("fonts/bebasneuebook.eot?#iefix") format("embedded-opentype"), url("fonts/bebasneuebook.woff") format("woff"), url("fonts/bebasneuebook.ttf") format("truetype"), url("fonts/bebasneuebook.svg#BebasNeue-Book") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+  body h1, body h2, body h3, body .date, body .category, body .comments, body .reply, body #submit, body .page-numbers {
+    font-family: 'BebasNeue-Book', sans-serif; }
+  body a {
+    text-decoration: none;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
+  body a:hover {
+    text-decoration: underline; }
+
+header.header {
+  width: 100%;
+  font-family: 'BebasNeue-Book', sans-serif; }
+  header.header .logo {
+    display: inline-block;
+    width: 30%; }
+    header.header .logo a {
+      color: #fff;
+      text-decoration: none; }
+      header.header .logo a h1 {
+        font-size: 3em;
+        margin: .5em 0; }
+  header.header nav.nav {
+    width: 69%;
+    padding: 0;
+    margin: 0;
+    display: inline-block; }
+    header.header nav.nav ul#main-menu {
+      padding: 0;
+      text-align: right;
+      margin: -1% 0 0 0; }
+      header.header nav.nav ul#main-menu li {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        margin-left: 2em;
+        text-align: right; }
+        header.header nav.nav ul#main-menu li a {
+          color: #fff;
+          text-decoration: none;
+          text-align: right;
+          font-size: 22px; }
+        header.header nav.nav ul#main-menu li a:hover {
+          text-decoration: underline; }
+  header.header .mobile-menu {
+    display: none;
+    background-image: url(img/mobile_menu.png);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    width: 37.5px;
+    height: 30px;
+    margin-top: 1.5em; }
+    header.header .mobile-menu.active {
+      background-position: 100% 0; }
+  header.header:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.descript {
+  font-family: 'BebasNeue-Book', sans-serif;
+  width: 62%;
+  margin: 0 0 2em 0;
+  font-size: 18px;
+  color: #fff; }
+
+@media (max-width: 1024px) {
+  .descript {
+    width: 50%; } }
+
+@media (max-width: 768px) {
+  .descript {
+    width: 100%; } }
+
+@media (max-width: 700px) {
+  header.header {
+    padding: .2em 0 0.8em 0;
+    height: auto;
+    min-height: 100px; }
+    header.header .logo {
+      width: 60%; }
+      header.header .logo a h1 {
+        font-size: 2.5em;
+        margin: 0.3em 0; }
+    header.header .mobile-menu {
+      display: block;
+      float: right; }
+    header.header nav.nav {
+      width: 100%;
+      display: none;
+      margin: 0;
+      overflow: hidden; }
+      header.header nav.nav ul#main-menu {
+        position: relative;
+        left: 0;
+        margin: 4% 0; }
+        header.header nav.nav ul#main-menu li {
+          display: block;
+          padding: 0.2em 0;
+          line-height: 1.3;
+          text-align: center;
+          width: auto;
+          margin: 0; }
+          header.header nav.nav ul#main-menu li a {
+            font-size: 1.6em; }
+  .descript {
+    width: 100%; } }
+
+footer.footer {
+  display: inline-block;
+  width: 100%;
+  font-family: 'BebasNeue-Book', sans-serif;
+  color: #fff; }
+  footer.footer .copy {
+    width: 49.5%;
+    float: left; }
+    footer.footer .copy p.copyright {
+      margin: 4.5% 0; }
+  footer.footer .socialmedia {
+    width: 50%;
+    text-align: right;
+    padding: 2% 0;
+    display: inline-block; }
+    footer.footer .socialmedia a {
+      color: #fff; }
+      footer.footer .socialmedia a .fa-instagram, footer.footer .socialmedia a .fa-facebook-official {
+        font-size: 2em;
+        margin-left: 4%; }
+  footer.footer input.search {
+    display: none;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 5px;
+    min-height: 40px;
+    border: none;
+    background-color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'BebasNeue-Book', sans-serif; }
+
+.container {
+  width: 94%;
+  padding: 3%;
+  margin: auto;
+  background-color: #fff;
+  color: #333333;
+  min-height: 700px; }
+  .container .newsfeed {
+    width: 73%;
+    display: inline-block; }
+    .container .newsfeed .newspost {
+      width: 31%;
+      margin-right: 1.5%;
+      display: inline-block; }
+      .container .newsfeed .newspost .bild {
+        width: 100%;
+        height: 200px;
+        background-color: gray; }
+      .container .newsfeed .newspost span.date {
+        margin: -50px 0 15px -5px;
+        background-color: #497849;
+        color: #fff;
+        padding: 0.4% 1%;
+        font-size: 14px;
+        position: absolute; }
+  .container h1.title {
+    font-size: 3em;
+    margin: .1em 0 .2em;
+    width: 100%; }
+  .container a {
+    color: #333333;
+    text-decoration: none;
+    transition: 100ms all ease-in; }
+  .container .pagination {
+    text-align: center; }
+    .container .pagination .page-numbers {
+      background-color: #00a651;
+      color: #fff;
+      padding: .5% 1%; }
+    .container .pagination .current {
+      background-color: #333333;
+      font-weight: 700; }
+
+@media (max-width: 1024px) {
+  .container .newsfeed {
+    width: 70%; } }
+
+@media (max-width: 768px) {
+  .container .newsfeed .newspost {
+    width: 48%; } }
+
+@media (max-width: 700px) {
+  .container .newsfeed {
+    width: 100%; }
+    .container .newsfeed .newspost {
+      width: 100%;
+      padding: 2% 0 4% 0; } }
+
+.container h1.title {
+  font-size: 3em;
+  margin: .1em 0 .2em;
+  width: 100%; }
+
+.container .textbox {
+  width: 70%;
+  display: inline-block; }
+  .container .textbox span.date, .container .textbox span.category, .container .textbox span.comments {
+    background-color: #00a651;
+    color: #fff;
+    padding: 1% 2%;
+    margin: 1% 2% 1% 0;
+    width: auto; }
+    .container .textbox span.date a, .container .textbox span.category a, .container .textbox span.comments a {
+      color: #fff; }
+
+.container a {
+  color: #333333;
+  text-decoration: none; }
+
+.container h3#comments {
+  display: none; }
+
+.container ol.commentlist {
+  padding: 0;
+  list-style-type: none !important; }
+  .container ol.commentlist .reply {
+    background-color: #00a651;
+    color: #fff;
+    padding: 1% 2%;
+    margin: 1% 2% 1% 0;
+    border: none;
+    width: 20%;
+    text-align: center; }
+    .container ol.commentlist .reply a {
+      color: #fff; }
+
+.container #respond #submit {
+  background-color: #00a651;
+  color: #fff;
+  padding: 1% 2%;
+  margin: 1% 2% 1% 0;
+  width: 20%;
+  text-align: center;
+  border: none; }
+  .container #respond #submit a {
+    color: #fff; }
+
+@media (max-width: 1024px) {
+  .container .textbox {
+    width: 65%; } }
+
+@media (max-width: 768px) {
+  .container .textbox {
+    width: 65%; } }
+
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+    padding: 5%; }
+    .container .textbox {
+      width: 100%; }
+      .container .textbox span.date, .container .textbox span.category, .container .textbox span.comments {
+        width: 100%;
+        padding: 2% 4%; } }
+
+@media (max-width: 350px) {
+  .container .textbox span.date, .container .textbox span.category, .container .textbox span.comments {
+    width: 100%; } }
+
+aside.sidebar {
+  width: 25%;
+  display: inline-block;
+  float: right; }
+  aside.sidebar form.search {
+    width: 100%;
+    border: #ccc;
+    margin: 1em 0 2em 0; }
+    aside.sidebar form.search input.search {
+      width: 100%;
+      box-shadow: none;
+      min-height: 40px;
+      border: 2px solid rgba(73, 120, 73, 0.5);
+      background-color: #fff;
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-family: 'BebasNeue-Book', sans-serif; }
+  aside.sidebar .sidebar_widget {
+    text-align: center;
+    font-family: 'BebasNeue-Book', sans-serif;
+    font-size: 26px; }
+    aside.sidebar .sidebar_widget ul {
+      padding: 0;
+      margin: 0 0 1.5em 0; }
+      aside.sidebar .sidebar_widget ul li {
+        list-style: none;
+        font-size: 20px; }
+        aside.sidebar .sidebar_widget ul li a {
+          text-decoration: none;
+          color: #333333; }
+        aside.sidebar .sidebar_widget ul li a:hover {
+          text-decoration: underline; }
+
+@media (max-width: 1024px) {
+  aside.sidebar {
+    width: 28%; } }
+
+@media (max-width: 700px) {
+  aside.sidebar {
+    display: none; } }
+
+body {
+  background: #fff;
+  color: #333333;
+  line-height: 1.4;
+  font-size: 16px;
+  margin: 0; }
+  body .wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto; }

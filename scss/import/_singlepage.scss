@@ -1,0 +1,98 @@
+.container{
+		h1.title{
+			font-size: 3em;
+			margin: .1em 0 .2em;
+			width: 100%;
+		}
+		.textbox{
+			width: 70%;
+			display: inline-block;
+				span.date, span.category, span.comments{
+					background-color: $color-green;
+					color: $color-white;
+					padding: 1% 2%;
+					margin: 1% 2% 1% 0;
+					width: auto;
+						a{
+							color: $color-white;
+						}
+				}
+		}
+		a{
+			color: $color-gray;
+			text-decoration: none;
+		}
+		h3#comments{
+			display: none;
+		}	 
+		ol.commentlist{
+			padding: 0;
+			list-style-type: none!important;
+				.reply{
+					background-color: $color-green;
+					color: $color-white;
+					padding: 1% 2%;
+					margin: 1% 2% 1% 0;
+					border: none;
+					width: 20%;
+					text-align: center;
+						a{
+							color: $color-white;
+						}
+				}
+		}
+		#respond{
+				#submit{
+					background-color: $color-green;
+					color: $color-white;
+					padding: 1% 2%;
+					margin: 1% 2% 1% 0;
+					width: 20%;
+					text-align: center;
+					border: none;
+						a{
+							color: $color-white;
+						}
+				}
+		}
+
+}
+
+@media (max-width: $h-tablet){
+	.container{
+			.textbox{
+				width: 65%;
+			}
+	}
+}
+@media (max-width: $tablet){
+	.container{
+			.textbox{
+				width: 65%;
+			}
+	}
+}
+
+@media (max-width: $h-mobile){
+	.container{
+		width: 90%;
+		padding: 5%;
+			.textbox{
+				width:100%;
+					span.date, span.category, span.comments{
+						width: 100%;
+						padding: 2% 4%;
+					}
+			}
+	}
+}
+
+@media (max-width: $mobile){
+	.container{
+			.textbox{
+					span.date, span.category, span.comments{
+						width: 100%;
+					}
+			}
+	}
+}

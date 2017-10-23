@@ -1,0 +1,12 @@
+#profile-page tr.user-url-wrap {
+  display: none; }
+#profile-page tr.user-description-wrap {
+  display: none; }
+#profile-page h3:nth-of-type(4) {
+  display: none; }
+
+.sb-meta-data-avatar {
+  width: 40px;
+  height: auto; }
+
+/*# sourceMappingURL=profile.css.map */

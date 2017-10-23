@@ -1,0 +1,42 @@
+/*!
+
+Theme Name: En sak i taget
+Theme URI: http://ensakitaget.se
+Description: En sak i taget - Malin Ingevall
+Author: Frida Gustafsson
+Version: 2.0
+
+*/
+
+$color-white: #fff;
+$color-lightgreen: #EDF2EF;
+$color-green: rgb(0,166,81);
+$color-orange: rgb(255,95,0);
+$color-gray: #333333;
+
+$h-tablet: 1024px;
+$tablet: 768px;
+$h-mobile: 700px;
+$mobile: 350px;
+
+@import "import/typography";
+@import "import/header";
+@import "import/footer";
+@import "import/newsfeedpage";
+@import "import/singlepage";
+@import "import/sidebar";
+
+body {
+	background: $color-white;
+	color: $color-gray;
+	line-height: 1.4;
+	font-size: 16px;
+	margin: 0;
+
+		.wrapper{
+			max-width: 1280px;
+			width: 100%;
+			margin: auto;
+		}
+
+}

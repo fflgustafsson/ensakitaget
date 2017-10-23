@@ -1,0 +1,52 @@
+.sb-text,
+.sb-textarea {
+	position: relative;
+}
+
+
+.sb-text-count {
+
+	position: absolute;
+	top: 0;
+	font-style: italic;
+	color: #999;
+	text-align: right;
+	width: 3em;
+
+	&.too-long {
+		color: red;
+		font-weight: bold;
+	}
+
+}
+
+.sb-text .sb-text-count {
+	left: 24em;
+}
+
+.sb-textarea .sb-text-count {
+	left: 360px;
+}
+
+.form-table {
+
+	.sb-text td,
+	.sb-textarea td {
+		position: relative;
+	}
+
+	.sb-text-count {
+		top: 19px;
+		left: 27em;
+		text-align: left;
+	}
+
+	.sb-textarea {
+
+		.sb-text-count {
+			left: 425px;
+		}
+
+	}
+
+}

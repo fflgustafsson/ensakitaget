@@ -1,0 +1,32 @@
+.progress-bar-wrapper {
+  line-height: 30px;
+  border-radius: 15px;
+  padding: 0;
+  margin: 1em 0 0 0;
+  text-align: center;
+  background-color: #CCC;
+  box-shadow: inset 0 3px 2px #BBB;
+  display: none;
+  position: relative; }
+  .progress-bar-wrapper span {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    z-index: 10; }
+  .progress-bar-wrapper .progress {
+    position: absolute;
+    border-radius: 15px;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    height: 32px;
+    background-color: #0074A2; }
+
+.media_page_regenerate_images .spinner {
+  margin: 3px 0 0 0; }
+
+.media_page_regenerate_images .submit {
+  width: 170px; }
+
+/*# sourceMappingURL=progress.css.map */

@@ -1,0 +1,14 @@
+#taxonomy-selector.postbox .inside {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 2em; }
+  #taxonomy-selector.postbox .inside input {
+    vertical-align: sub; }
+  #taxonomy-selector.postbox .inside input[type=radio]:checked:before {
+    background-color: #00845a; }
+
+.edit-tags-php .taxonomy-image {
+  width: 32px;
+  height: auto; }
+
+/*# sourceMappingURL=taxonomy.css.map */
