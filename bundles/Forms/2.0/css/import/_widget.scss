@@ -1,0 +1,40 @@
+.widget-content {
+
+	.sb-url {
+		height: 49px;
+	}
+
+	.search-results {
+		width: 85%;
+	}
+
+	.sb-post-select-wrapper.has-posts .search-wrapper { margin-top: 0; }
+
+	.sb-post-select-wrapper {
+		max-width: 100%;
+		input[type="search"],
+		input[type="text"] {
+			width: 86%;
+		}
+	}
+
+}
+
+.widget-content {
+	padding-bottom: 10px;
+}
+
+.widget-content input[type=text] {
+	max-width: 99%;
+}
+
+.widget-content label {
+	font-weight: bold;
+}
+
+.widget-content .sb-checkbox label {
+	font-weight: normal;
+}
+
+
+

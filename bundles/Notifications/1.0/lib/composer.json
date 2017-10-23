@@ -1,0 +1,5 @@
+{
+    "require": {
+        "sly/notification-pusher": "^2.2"
+    }
+}

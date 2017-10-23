@@ -1,0 +1,27 @@
+
+.color-wrapper {
+	width: 220px;
+
+	input[type=text] {
+		width: 80px;
+	}
+
+}
+
+.color-box {
+	width: 50px;
+	height: 27px;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.iris-picker {
+	margin-top: 10px !important;
+}
+
+.default-color {
+	float: right;
+}

@@ -1,0 +1,21 @@
+#profile-page {
+
+    tr.user-url-wrap {
+        display: none;
+    }
+
+    tr.user-description-wrap {
+        display: none;
+    }
+
+    // FIXME probably subject to change
+    h3:nth-of-type(4) {
+        display: none;
+    }
+
+}
+
+.sb-meta-data-avatar {
+    width: 40px;
+    height: auto;
+}

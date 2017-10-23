@@ -1,0 +1,95 @@
+/*
+Name: Forms styling
+Description: Something
+Version: 1
+*/
+
+// Base
+@import "import/mixins";
+
+a.cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: block;
+	background-color: white;
+	@include opacity(0);
+    @include transition(0.1s ease-in-out);
+	&:hover {
+		@include opacity(0.05);
+	}
+}
+
+.sb-forms {
+
+	margin-bottom: 20px;
+
+	label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	&.sb-textarea {
+
+		textarea {
+			max-width: 400px;
+		}
+
+	}
+
+	&.sb-checkbox {
+
+		label {
+			display: inline;
+		}
+
+		input[type="checkbox"] {
+			float: left;
+			margin-top: 3px;
+			margin-right: 10px;
+		}
+
+	}
+
+	&.sb-editor {
+
+		// label {
+		// 	margin-bottom: -25px;
+		// }
+
+	}
+
+	.calendar-icon {
+		color: #888;
+		margin: 3px;
+
+		&:hover {
+			color: #333;
+		}
+
+	}
+
+}
+
+.sb-options-regular-options-page {
+	#setting-error-settings_updated {
+		display: none !important;
+	}
+}
+
+// Fields
+@import "import/text";
+@import "import/remove";
+@import "import/color";
+@import "import/image";
+@import "import/posts";
+@import "import/url";
+@import "import/toggle";
+@import "import/password";
+@import "import/options";
+@import "import/multi";
+@import "import/fader";
+

@@ -1,0 +1,206 @@
+.sb-post-select-wrapper {
+	max-width: 400px;
+
+	.spinner {
+		display: block !important;
+		@include opacity(0);
+		&.visible {
+			@include opacity(100);
+		}
+	}
+
+	.search-wrapper {
+		position: relative;
+	}
+
+	.selected-posts {
+		margin: 0;
+		padding-bottom: 5px;
+
+		.missing-image {
+			float: left;
+			width: 38px;
+			height: 38px;
+			border: 1px solid #DDD;
+			background-color: #e6e6e6;
+		}
+
+		li {
+			position: relative;
+			overflow: auto;
+			min-height: 40px;
+			cursor: row-resize;
+		}
+
+		img {
+			float: left;
+			max-width: 40px;
+		}
+
+		.post-date,
+		.post-meta,
+		.post-title {
+			display: block;
+			margin-left: 50px;
+		}
+
+		.post-title {
+			padding-right: 30px;
+		}
+
+		.post-type {
+			display: none;
+		}
+
+		.post-meta {
+			font-size: 85%;
+			font-style: italic;
+		}
+
+		.remove-selected {
+			box-shadow: none;
+		}
+
+	}
+
+	.search-results {
+		display: none;
+		position: absolute;
+		width: 100%;
+		top: 27px;
+		left: 1px;
+		background-color: white;
+		margin: 0;
+		z-index: 100;
+		max-width: 358px;
+		border: 1px solid #999;
+		box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+
+		li {
+			padding: 10px 15px;
+
+			&:nth-child(odd) {
+				background-color: #EEE;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+		}
+
+		span {
+			font-size: 85%;
+		}
+
+		span.select-post {
+			font-size: 100%;
+		}
+
+		span.post-type {
+			float: right;
+			color: #BBB;
+		}
+
+		span.post-meta {
+			display: block;
+			font-style: italic;
+		}
+
+	}
+
+	.spinner {
+		margin-top: 5px;
+	}
+
+	input[type="search"],
+	input[type="text"] {
+		width: 90%;
+	}
+
+	.sb-forms-placeholder {
+		display: block;
+		margin-bottom: 5px;
+		border: 2px dashed #ddd;
+	}
+
+	&.sb-post-list-w-filter {
+
+		.description {
+			clear: both;
+			padding-top: 10px;
+		}
+
+	}
+
+	.list-wrapper {
+		display: none;
+	}
+
+	&.has-post-list {
+
+		.list-wrapper {
+			display: block;
+		}
+
+		.choose-post-from-list {
+			opacity: 0.5;
+		}
+
+		.post-list {
+			width: 90%;
+			height: 175px;
+			overflow-x: auto;
+			border: 1px solid #999;
+			box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+			margin-top: 10px;
+
+			li {
+				padding: 10px 15px;
+
+				&:nth-child(odd) {
+					background-color: #EEE;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				&.hide {
+					display: none;
+				}
+
+			}
+
+			span {
+				font-size: 85%;
+			}
+
+			span.select-post {
+				font-size: 100%;
+			}
+
+			span.post-type {
+				float: right;
+				color: #BBB;
+			}
+
+			span.post-meta {
+				display: block;
+				font-style: italic;
+			}
+
+		}
+
+	}
+
+}
+
+.wp-core-ui {
+
+	.choose-post-from-list {
+		float: right;
+		margin-right: 10px;
+	}
+
+}

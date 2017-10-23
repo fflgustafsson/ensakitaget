@@ -1,0 +1,49 @@
+[
+    {
+        "name": "google/apiclient",
+        "version": "1.0.5-beta",
+        "version_normalized": "1.0.5.0-beta",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/google/google-api-php-client.git",
+            "reference": "c05d454790460f0c851c42298ea239ec5e631d76"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/google/google-api-php-client/zipball/c05d454790460f0c851c42298ea239ec5e631d76",
+            "reference": "c05d454790460f0c851c42298ea239ec5e631d76",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "3.7.*"
+        },
+        "time": "2014-09-08 20:57:18",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "include-path": [
+            "src/"
+        ],
+        "license": [
+            "Apache-2.0"
+        ],
+        "description": "Client library for Google APIs",
+        "homepage": "http://developers.google.com/api-client-library/php",
+        "keywords": [
+            "google"
+        ]
+    }
+]

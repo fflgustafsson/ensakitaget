@@ -1,0 +1,22 @@
+/* fix clash between datepicker and iris */
+
+.ui-slider.ui-widget-content {
+	background: none;
+	border: 0;
+}
+
+.iris-picker-inner .ui-state-focus {
+	background: none;
+	border: 0;
+	outline: 0;
+}
+
+.widgets-holder-wrap .widget-inside { // fix new widget-style 3.8
+	padding: 10px 15px 15px;
+}
+
+
+// Fix editor
+.wp_themeSkin iframe {
+    background: white !important;
+}
