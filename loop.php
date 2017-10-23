@@ -1,31 +1,21 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-	<div class="newspost">
+	<div class="inspiration__article">
 		<!-- article -->
 		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<!-- post thumbnail -->
-				<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-						<?php the_post_thumbnail(); (array( 245, 245, true) ); ?>
-					</a>
-				<?php endif; ?>
+				<div class="inspiration__article__img">
+					<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+						<?php the_post_thumbnail(); ?>
+					<?php endif; ?>
+				</div>
 
-				<!-- post details -->
-				<div class="date">
+				<div class="meta">
 					<?php the_time('H:i'); ?> 
 				</div>
-				<!-- /post details -->
 
-				<!-- /post thumbnail -->
-
-				<!-- post title -->
-				<h2>
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-						<?php the_title(); ?>
-					</a>
-				</h2>
+				<h2><?php the_title(); ?></h2>
 				<!-- /post title -->
 
 			</article>

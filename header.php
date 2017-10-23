@@ -12,11 +12,10 @@
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type='text/css'>
         
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<?php wp_head(); ?>
@@ -33,7 +32,7 @@
 				<div class="logo">
 					<a href="<?php echo home_url(); ?>">
 						<h1>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/ensakitaget-logo.svg" alt="En sak i taget logotyp">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/ensakitaget-logo.svg" alt="ensakitaget.se">
 						</h1>
 					</a>
 				</div>
