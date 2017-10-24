@@ -11,8 +11,9 @@
 					<?php endif; ?>
 				</div>
 
-				<div class="meta">
-					<?php the_time('H:i'); ?> 
+				<div class="inspiration__article__meta">
+					<div class="cat"><?php the_category( ', '); ?></div>
+					<div class="date"><?php the_date(); ?></div>
 				</div>
 
 				<h2><?php the_title(); ?></h2>

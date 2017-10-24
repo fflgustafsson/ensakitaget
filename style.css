@@ -143,60 +143,41 @@ footer.footer {
     letter-spacing: 1px;
     font-family: 'BebasNeue-Book', sans-serif; }
 
-.inspiration {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -0.5em; }
-  .inspiration__article {
-    flex: 1 1 33.333%;
-    flex-basis: calc(33.333% - 20px);
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    margin: 0 .5em 1em;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-    .inspiration__article__img {
-      max-height: 300px;
-      overflow: hidden; }
-  .inspiration span.date {
-    margin: -50px 0 15px -5px;
-    background-color: #497849;
-    color: #fff;
-    padding: 0.4% 1%;
-    font-size: 14px;
-    position: absolute; }
-  .inspiration h1.title {
-    font-size: 3em;
-    margin: .1em 0 .2em;
-    width: 100%; }
-  .inspiration a {
-    color: #333333;
-    text-decoration: none;
-    transition: 100ms all ease-in; }
-  .inspiration .pagination {
-    text-align: center; }
-    .inspiration .pagination .page-numbers {
-      background-color: #00a651;
-      color: #fff;
-      padding: .5% 1%; }
-    .inspiration .pagination .current {
-      background-color: #333333;
-      font-weight: 700; }
-  @media (max-width: 1024px) {
-    .inspiration .container .newsfeed {
-      width: 70%; } }
-  @media (max-width: 768px) {
-    .inspiration .container .newsfeed .newspost {
-      width: 48%; } }
-  @media (max-width: 700px) {
-    .inspiration .container .newsfeed {
-      width: 100%; }
-      .inspiration .container .newsfeed .newspost {
+.inspirationWrap {
+  text-align: center; }
+  .inspirationWrap .inspiration {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.5em; }
+    .inspirationWrap .inspiration__article {
+      flex: 1 1 25%;
+      flex-basis: calc(25% - 20px);
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      margin: 0 .5em 1em;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      .inspirationWrap .inspiration__article__img {
+        max-height: 300px;
+        overflow: hidden; }
+      .inspirationWrap .inspiration__article h2 {
+        margin: .1em 0 .2em;
         width: 100%;
-        padding: 2% 0 4% 0; } }
+        font-size: 20px;
+        font-family: 'VAGrounded'; }
+      .inspirationWrap .inspiration__article a {
+        color: #333333;
+        text-decoration: none;
+        transition: 100ms all ease-in; }
+  .inspirationWrap .pagination {
+    text-align: center; }
+    .inspirationWrap .pagination .page-numbers {
+      padding: .5% 1%; }
+    .inspirationWrap .pagination .current {
+      font-weight: 700; }
 
 .container h1.title {
   font-size: 3em;

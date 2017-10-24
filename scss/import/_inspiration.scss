@@ -1,85 +1,61 @@
-.inspiration {
-	display: flex;
-   flex-wrap: wrap;
-   margin: 0 -0.5em;
-	
-	&__article {
-		flex: 1 1 33.333%;
-   	flex-basis: calc(33.333% - 20px);
-   	overflow: hidden;
-   	position: relative;
-   	width: 100%;
-   	margin: 0 .5em 1em;
-   	-webkit-transition: all 0.3s ease-in-out;
-			-moz-transition: all 0.3s ease-in-out;
-			  -o-transition: all 0.3s ease-in-out;
-				  transition: all 0.3s ease-in-out;
+.inspirationWrap {
+	text-align: center;
 
-		&__img {
-			max-height: 300px;
-			overflow: hidden;
-		}
-	}
+	.inspiration {
+		display: flex;
+	   flex-wrap: wrap;
+	   margin: 0 -0.5em;
+		
+		&__article {
+			flex: 1 1 25%;
+	   	flex-basis: calc(25% - 20px);
+	   	overflow: hidden;
+	   	position: relative;
+	   	width: 100%;
+	   	margin: 0 .5em 1em;
+	   	-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				  -o-transition: all 0.3s ease-in-out;
+					  transition: all 0.3s ease-in-out;
 
-	span.date {
-		margin: -50px 0 15px -5px;
-						    background-color: #497849;
-						    color: #fff;
-						    padding: 0.4% 1%;
-						    font-size: 14px;
-						    position: absolute;
-	}
-	h1.title{
-			font-size: 3em;
-			margin: .1em 0 .2em;
-			width: 100%;
-		}
-		a{
-			color: $color-gray;
-			text-decoration: none;
-			transition: 100ms all ease-in;
-		}
-		.pagination {
-			text-align: center;
-				.page-numbers{
-					background-color: $color-green;
-					color: $color-white;
-					padding: .5% 1%;
-				}
-				.current{
-					background-color: $color-gray;
-					font-weight: 700;
-				}
-
-	}
-
-@media (max-width: $h-tablet){
-	.container{
-			.newsfeed{
-				width: 70%
+			&__img {
+				max-height: 300px;
+				overflow: hidden;
 			}
-	}
-}
-@media (max-width: $tablet){
-	.container{
-			.newsfeed{
-					.newspost{
-						width: 48%;
-					}
-			}
-	}
-}
 
-@media (max-width: $h-mobile){
-	.container{
-			.newsfeed{
+			&__meta {
+
+			}
+
+			h2 {
+				margin: .1em 0 .2em;
 				width: 100%;
-					.newspost{
-						width: 100%;
-						padding: 2% 0 4% 0;
-					}
+				font-size: 20px;
+				font-family: 'VAGrounded';
+				text-align: left;
 			}
+
+			a {
+				color: $color-gray;
+				text-decoration: none;
+				transition: 100ms all ease-in;
+			}
+
+		}
+
 	}
-}
+
+	.pagination {
+		text-align: center;
+			
+		.page-numbers {
+			padding: .5% 1%;
+		}
+				
+		.current {
+			font-weight: 700;
+		}
+
+	}
 
 }
