@@ -8,11 +8,11 @@
 		
 		&__article {
 			flex: 1 1 25%;
-	   	flex-basis: calc(25% - 20px);
+	   	flex-basis: calc(25% - 24px);
 	   	overflow: hidden;
 	   	position: relative;
 	   	width: 100%;
-	   	margin: 0 .5em 1em;
+	   	margin: 0 0.75em 1em;
 	   	-webkit-transition: all 0.3s ease-in-out;
 				-moz-transition: all 0.3s ease-in-out;
 				  -o-transition: all 0.3s ease-in-out;
@@ -21,6 +21,12 @@
 			&__img {
 				max-height: 300px;
 				overflow: hidden;
+
+				img {
+					width: 150%;
+   				height: auto;
+				}
+
 			}
 
 			&__meta {
@@ -59,3 +65,72 @@
 	}
 
 }
+
+@media all and (max-width: $h-tablet) {
+
+	.inspirationWrap {
+	
+		.inspiration {
+			
+			&__article {
+				flex: 1 1 33%;
+	    		flex-basis: calc(33% - 24px);
+			}
+
+		}
+
+	}
+
+}
+
+@media all and (max-width: $tablet) {
+
+	.inspirationWrap {
+	
+		.inspiration {
+			
+			&__article {
+				flex: 1 1 50%;
+	    		flex-basis: calc(50% - 24px);
+
+	    		&__img {
+
+	    			img {
+	    				width: 125%;
+	    			}
+	    			
+	    		}
+
+			}
+
+		}
+
+	}
+
+}
+
+@media all and (max-width: 600px) {
+	
+	.inspirationWrap {
+	
+		.inspiration {
+			
+			&__article {
+				flex: 1 1 100%;
+				flex-basis: calc(100%);
+
+				&__img {
+
+	    			img {
+	    				width: 100%;
+	    			}
+	    		}
+
+	    	}
+
+	   }
+
+	}
+    
+}
+

@@ -21,39 +21,52 @@
 		<?php wp_head(); ?>
 
 	</head>
+
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
-		<div class="wrapper">
+<!-- 		<nav class="nav__mobile">
+      	<div class="nav__mobile__close"><i class="fa fa-times" aria-hidden="true"></i></div>
+      	<?php wp_nav_menu(array('menu' => 'main-menu')); ?>
+	      <ul>
+	      	<li>
+	      		<a href="" title="facebook"></a>
+	      	</li>
+	      	<li>
+	      		<a href="" title="instagram"></a>
+	         </li>
+	      </ul>
+	   </nav>
 
-			<!-- header -->
-			<header class="header clear" role="banner">
+    	<div class="nav__overlay js-nav-overlay"></div> -->
 
-				<div class="logo">
+		<header class="header" role="banner">
+
+			<div class="header__logo">
 					<a href="<?php echo home_url(); ?>">
 						<h1>
 							<img src="<?php echo get_template_directory_uri(); ?>/images/ensakitaget-logo.svg" alt="ensakitaget.se">
 						</h1>
 					</a>
+			</div>
+
+			<nav class="nav__desktop" role="navigation">
+				<div class="nav__desktop__toggle">
+					<i class="fa fa-bars" aria-hidden="true"></i> Meny
 				</div>
+            <div class="nav__desktop__social">
+              	<ul>
+              		<li>
+              			<a href="" title="facebook"></a>
+              		</li>
+              		<li>
+              			<a href="https://www.instagram.com/ensakitaget_by_malin/" title="instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              		</li>
+              	</ul>
+            </div>
+            <div class="nav__desktop__main">
+              <?php wp_nav_menu(array('menu' => 'nav-menu')); ?>
+            </div>
+         </nav>
+			
 				
-				<div id="mobile-menu" class="mobile-menu"></div>
-
-				<!-- nav -->
-				<nav id="navigation" class="nav" role="navigation">
-
-					<?php
-			             wp_nav_menu(array(
-			              'theme_location' => 'main_menu',
-			              'menu_class'     => 'main-menu',
-			              'menu_id'        => 'main-menu',
-			              'container'      => false,
-			              'fallback_cb'    => false,
-			            ));
-			        ?>
-					
-				</nav>
-				<!-- /nav -->
-				
-			</header>
-			<!-- /header -->
+		</header>

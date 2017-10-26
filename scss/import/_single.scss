@@ -1,3 +1,59 @@
+// 
+// Styling for articlepages and underpages 
+// 
+
+.page {
+
+	&__img {
+		overflow: hidden;
+		max-height: 600px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+	}
+
+	&__txt {
+		margin: 0 auto;
+		max-width: 700px;
+		width: 100%;
+
+		h1 {
+			text-align: center;
+		}
+
+	}
+
+}
+
+.single {
+
+	&__img {
+		overflow: hidden;
+		max-height: 600px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+	}
+
+	&__txt {
+		margin: 0 auto;
+		max-width: 700px;
+		width: 100%;
+
+		h1 {
+			text-align: center;
+		}
+
+	}
+
+}
+
 .container{
 		h1.title{
 			font-size: 3em;

@@ -77,4 +77,40 @@ function html5wp_pagination()
 }
 
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 245, 245, array( 'center', 'center')  ); 
+set_post_thumbnail_size( 300, 300, array( 'center', 'center')  ); 
+
+add_action('init', 'create_post_type_services'); // Add our HTML5 Blank Custom Post Type
+function create_post_type_services()
+{
+    register_post_type('services', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Tjänster', 'services'), // Rename these to suit
+            'singular_name' => __('Tjänst', 'services'),
+            'add_new' => __('Lägg till', 'services'),
+            'add_new_item' => __('Lägg till nytt', 'services'),
+            'edit' => __('Ändra', 'services'),
+            'edit_item' => __('Ändra tjänst', 'services'),
+            'new_item' => __('Ny tjänst', 'services'),
+            'view' => __('Visa', 'services'),
+            'view_item' => __('Visa tjänst', 'services'),
+            'search_items' => __('Sök tjänst', 'services'),
+            'not_found' => __('Ingen tjänst funnen', 'services'),
+            'not_found_in_trash' => __('Ingen tjänst i papperskorgen', 'services')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => false,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail',
+            'custom-fields'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies'  => array(),
+        'menu_position' => 5
+    ));
+}
+

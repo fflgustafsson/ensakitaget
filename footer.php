@@ -1,15 +1,10 @@
 
 			<footer class="footer" role="contentinfo">
 				
-				<div class="copy">
-					<p class="copyright">
-					&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
-				</p>
-				</div>
-				<div class="socialmedia">
-					<?php if ( is_active_sidebar( 'socialfooter' )  ) : ?>
-						<?php dynamic_sidebar( 'socialfooter' ); ?>
-					<?php endif; ?>
+				<div class="footer__copy">
+					<p> 
+						&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - <a href="https://www.maliningevall.se">Malin Ingevall</a>
+					</p>
 				</div>
 
 			</footer>

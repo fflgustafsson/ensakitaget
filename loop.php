@@ -7,7 +7,7 @@
 
 				<div class="inspiration__article__img">
 					<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-						<?php the_post_thumbnail(); ?>
+						<?php the_post_thumbnail('full'); ?>
 					<?php endif; ?>
 				</div>
 
@@ -17,7 +17,6 @@
 				</div>
 
 				<h2><?php the_title(); ?></h2>
-				<!-- /post title -->
 
 			</article>
 		</a>

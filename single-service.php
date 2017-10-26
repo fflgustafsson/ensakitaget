@@ -12,22 +12,10 @@
 					<?php endif; ?>
 				</div>
 
-				<div class="single__txt">
-
+				<div class="single__txtwrapper">
 					<h1>
 						<?php the_title(); ?>
 					</h1>
-						<!-- /post title -->
-
-					<div class="single__meta">
-						<span class="category">
-							<?php the_category(','); // Separated by commas ?>
-						</span>
-							
-						<span class="date">
-							<?php the_date(); ?>
-						</span>
-					</div>
 
 					<?php the_content(); // Dynamic Content ?>
 				</div>

@@ -20,9 +20,9 @@ $h-mobile: 700px;
 $mobile: 350px;
 
 @import "import/typography";
-@import "import/header";
-@import "import/footer";
+@import "import/base";
 @import "import/inspiration";
+@import "import/service";
 @import "import/single";
 
 body {
