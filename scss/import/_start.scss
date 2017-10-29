@@ -73,10 +73,17 @@
 
 			img {
 				width: 60px;
+				display: block;
+				margin: 0 auto;
 			}
 
 			h2 {
+				display: inline-block;
+			   margin: 0.5em 0;
+			   padding: 0.25em;
+				border-bottom: 3px solid transparent;
 				font-size: 25px;
+				font-family: 'VAGrounded', sans-serif;
 			}
 
 			p {
@@ -84,6 +91,18 @@
 				max-width: 380px;
 				text-align: center;
 			}
+
+			&:hover h2, 
+			&:focus h2 {
+				border-bottom: 3px solid $color-orange;
+				color: $color-gray;
+			}
+
+			&:hover, 
+			&:focus {
+				color: $color-gray;
+			}
+
 		}
 
 	}
@@ -100,6 +119,7 @@
 		h2 {
 			max-width: 700px;
 			margin: 0.5em auto;
+			font-family: 'VAGrounded', sans-serif;
 		}
 
 		p {
@@ -114,6 +134,38 @@
 			border-radius: 4px;
 			font-size: 20px;
 			color: #FFFFFF!important;
+			-webkit-transition: all 0.3s ease-in-out;
+		   	-moz-transition: all 0.3s ease-in-out;
+		   	  -o-transition: all 0.3s ease-in-out;
+					  transition: all 0.3s ease-in-out;
+
+			&:hover, 
+			&:focus {
+				background-color: $color-gray;
+			}
+
+		}
+
+	}
+
+}
+
+
+@media all and (max-width: 600px) {
+
+	.start {
+
+		&__inputLink {
+
+			a {
+				-webkit-box-flex: 1;
+						  -ms-flex: 1 1 100%;
+						  		flex: 1 1 100%;
+	   		-ms-flex-preferred-size: 100%;
+	   						 flex-basis: 100%;
+	   		width: 100%;
+			}
+
 		}
 
 	}

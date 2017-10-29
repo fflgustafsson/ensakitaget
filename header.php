@@ -5,9 +5,9 @@
 		<meta charset="<?php bloginfo('charset'); ?>">
 		
 		<title>
-			<?php wp_title(''); ?>
-			<?php if(wp_title('', false)) { echo ' :'; } ?> 
 			<?php bloginfo('name'); ?>
+			<?php if(wp_title('', false)) { echo ' -'; } ?> 
+			<?php wp_title(''); ?>
 		</title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">

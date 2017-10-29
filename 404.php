@@ -1,26 +1,25 @@
 <?php get_header(); ?>
 
-	<div class="container">
-			
-		<!-- article -->
+	<div class="container error">
+
 		<article id="post-404">
 
-			<h1>
-				<?php _e( '404', 'html5blank' ); ?>
-			</h1>
-				
-			<p>
-				Ojdå, verkar som det inte finns något här...?
-				<a href="<?php echo home_url(); ?>">
-					<?php _e( 'Till start?', 'html5blank' ); ?>
-				</a>
-			</p>
+				<h1>
+					<?php _e( '404', 'html5blank' ); ?>
+				</h1>
+					
+				<p class="">
+					Ojdå, verkar som det inte finns något här...?
+					<a href="<?php echo home_url(); ?>">
+						<?php _e( 'Till start?', 'html5blank' ); ?>
+					</a>
+				</p>
 
-		</article>
-			<!-- /article -->
+			</article>
 
-		<?php get_sidebar(); ?>
+		</div>
 
 	</div>
+
 
 <?php get_footer(); ?>
