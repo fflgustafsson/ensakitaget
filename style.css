@@ -471,7 +471,6 @@ body {
 .start__inputLink {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -0.5em;
   padding: 4em 0; }
   .start__inputLink a {
     -webkit-box-flex: 1;
@@ -483,7 +482,7 @@ body {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    width: 100%;
+    width: 33%;
     margin: 0 0.75em 1em;
     text-align: center;
     -webkit-transition: all 0.3s ease-in-out;
@@ -498,6 +497,26 @@ body {
       margin: 0 auto;
       max-width: 380px;
       text-align: center; }
+
+.start__test {
+  background-color: #EDF2EF;
+  padding: 4em 0;
+  text-align: center; }
+  .start__test img {
+    width: 75px; }
+  .start__test h2 {
+    max-width: 700px;
+    margin: 0.5em auto; }
+  .start__test p {
+    max-width: 700px;
+    margin: 0.5em auto; }
+  .start__test__btn {
+    width: 250px;
+    padding: 0.5em 5em;
+    background-color: #ff5f00;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #FFFFFF !important; }
 
 .page__img {
   overflow: hidden;
