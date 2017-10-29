@@ -15,7 +15,7 @@ class Admin
         add_action('admin_enqueue_scripts', array(__CLASS__, 'enqueueScripts'));
         // add_action('admin_init', array(__CLASS__, 'filterEditor'));
         add_action('wp_dashboard_setup', array(__CLASS__, 'removeDashboardWidgets'));
-        add_action( 'admin_init',  array(__CLASS__,'aifi_add_editor_styles' ));
+        // add_action( 'admin_init',  array(__CLASS__,'aifi_add_editor_styles' ));
 
         
         // add_action('admin_init', array(__CLASS__, 'userAddRedirect'));
@@ -68,9 +68,9 @@ class Admin
 
     }
 
-    public static function aifi_add_editor_styles() {
-        add_editor_style( get_template_directory_uri().'/css/editor.css');
-    }
+    // public static function aifi_add_editor_styles() {
+    //     add_editor_style( get_template_directory_uri().'/css/editor.css');
+    // }
     
 
     public static function enqueueScripts()

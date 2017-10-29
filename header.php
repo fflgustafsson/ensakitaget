@@ -24,39 +24,47 @@
 
 	<body <?php body_class(); ?>>
 
-<!-- 		<nav class="nav__mobile">
-      	<div class="nav__mobile__close"><i class="fa fa-times" aria-hidden="true"></i></div>
-      	<?php wp_nav_menu(array('menu' => 'main-menu')); ?>
-	      <ul>
-	      	<li>
-	      		<a href="" title="facebook"></a>
-	      	</li>
-	      	<li>
-	      		<a href="" title="instagram"></a>
-	         </li>
-	      </ul>
+		<nav class="nav__mobile">
+      	<div class="nav__mobile__close">
+      		<i class="fa fa-times" aria-hidden="true"></i>
+      	</div>
+      	<div class="nav__mobile__main">
+      		<?php wp_nav_menu(array('menu' => 'nav-menu')); ?>
+      	</div>
+	      <ul class="nav__mobile__social">
+            <li>
+              	<a href="https://www.facebook.com/Ensakitagetbymalin/" title="facebook">
+              		<i class="fa fa-facebook-official" aria-hidden="true"></i>
+              	</a>
+            </li>
+            <li>
+            	<a href="https://www.instagram.com/ensakitaget_by_malin/" title="instagram" target="_blank">
+            		<i class="fa fa-instagram" aria-hidden="true"></i>
+            	</a>
+            </li>
+         </ul>
 	   </nav>
 
-    	<div class="nav__overlay js-nav-overlay"></div> -->
+    	<div class="nav__overlay js-nav-overlay"></div>
 
 		<header class="header" role="banner">
 
 			<div class="header__logo">
-					<a href="<?php echo home_url(); ?>">
-						<h1>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/ensakitaget-logo.svg" alt="ensakitaget.se">
-						</h1>
-					</a>
+				<a href="<?php echo home_url(); ?>">
+					<h1>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/ensakitaget_logo.png" alt="ensakitaget.se">
+					</h1>
+				</a>
 			</div>
 
 			<nav class="nav__desktop" role="navigation">
-				<div class="nav__desktop__toggle">
+				<div class="nav__desktop__toggle" id="nav__toggle">
 					<i class="fa fa-bars" aria-hidden="true"></i> Meny
 				</div>
             <div class="nav__desktop__social">
               	<ul>
               		<li>
-              			<a href="" title="facebook"></a>
+              			<a href="https://www.facebook.com/Ensakitagetbymalin/" title="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
               		</li>
               		<li>
               			<a href="https://www.instagram.com/ensakitaget_by_malin/" title="instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>

@@ -1,10 +1,58 @@
 .inspirationWrap {
 	text-align: center;
 
+	&__menu {
+		padding: 1em 0 2em;
+
+		ul {
+			margin: 0.5em 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+
+			li {
+					list-style: none;
+					padding: 0 0.25em;
+		
+					a {
+						padding: 0.25em;
+						font-family: 'VAGrounded', sans-serif;
+						color: $color-green;
+						text-decoration: none;
+						text-align: right;
+						font-size: 20px;
+						border-bottom: 3px solid transparent;
+						-webkit-transition: all 0.3s ease-in-out;
+							-moz-transition: all 0.3s ease-in-out;
+							  -o-transition: all 0.3s ease-in-out;
+								  transition: all 0.3s ease-in-out;
+
+						&:hover,
+						&:focus,
+						&:active {
+							border-bottom: 3px solid $color-orange;
+						}
+
+					}
+
+				}
+
+				.current-menu-item a {
+					border-bottom: 3px solid $color-orange;
+				}
+
+			}
+
+	}
+
+	&__categoryTitle {
+		display: none;
+	}
+
 	.inspiration {
 		display: flex;
-	   flex-wrap: wrap;
-	   margin: 0 -0.5em;
+		flex-wrap: wrap;
+		margin: 0 -0.75em;
 		
 		&__article {
 			flex: 1 1 25%;
@@ -12,7 +60,7 @@
 	   	overflow: hidden;
 	   	position: relative;
 	   	width: 100%;
-	   	margin: 0 0.75em 1em;
+	   	margin: 0 0.75em 1.5em;
 	   	-webkit-transition: all 0.3s ease-in-out;
 				-moz-transition: all 0.3s ease-in-out;
 				  -o-transition: all 0.3s ease-in-out;
@@ -21,16 +69,22 @@
 			&__img {
 				max-height: 300px;
 				overflow: hidden;
+				display: flex;
+			   align-items: center;
+			   justify-content: center;
 
 				img {
-					width: 150%;
+					width: 135%;
    				height: auto;
 				}
 
 			}
 
 			&__meta {
-
+				margin: 0.5em 0;
+				text-align: left;
+				max-height: 22px;
+    			overflow: hidden;
 			}
 
 			h2 {
@@ -39,6 +93,10 @@
 				font-size: 20px;
 				font-family: 'VAGrounded';
 				text-align: left;
+				-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+				  	  -o-transition: all 0.3s ease-in-out;
+						  transition: all 0.3s ease-in-out;
 			}
 
 			a {
@@ -47,19 +105,25 @@
 				transition: 100ms all ease-in;
 			}
 
+			&:hover h2,
+			&:focus h2 {
+				color: $color-orange;
+			}
+
 		}
 
 	}
 
 	.pagination {
 		text-align: center;
+		margin: 1em 0;
 			
 		.page-numbers {
-			padding: .5% 1%;
+			padding: 0.5em;
 		}
 				
 		.current {
-			font-weight: 700;
+			font-weight: 600;
 		}
 
 	}
@@ -112,6 +176,20 @@
 @media all and (max-width: 600px) {
 	
 	.inspirationWrap {
+
+		&__menu {
+			padding: 1em 0;
+
+			ul {
+				flex-wrap: wrap;
+
+				li {
+					padding: 0.5em 0.25em;
+				}
+
+			}
+
+		}
 	
 		.inspiration {
 			
@@ -120,6 +198,7 @@
 				flex-basis: calc(100%);
 
 				&__img {
+					max-height: none;
 
 	    			img {
 	    				width: 100%;

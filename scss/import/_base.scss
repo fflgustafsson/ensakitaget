@@ -17,7 +17,15 @@
 			color: $color-green;
 
 			h1 {
-				letter-spacing: 0.05em;
+				margin: 0;
+				display: flex;
+    			align-items: center;
+    			letter-spacing: 0.05em;
+
+				img {
+					width: 100%;
+					max-width: 400px;
+				}
 			}
 
 		}
@@ -29,16 +37,44 @@
 		margin: 0;
 
 		&__toggle {
-				display: none;
-				font-size: 22px;
+			display: none;
+			font-size: 22px;
+			color: $color-green;
 		}
 
 		&__social {
-			
-			li {
-				list-style: none;
+
+			ul {
+				margin: 0.5em 0;
+				padding: 0;
 				text-align: right;
-				padding: 0 0.25em;
+				display: flex;
+				justify-content: flex-end;
+
+				li {
+					list-style: none;
+					text-align: right;
+					padding: 0 0.5em;
+
+					a {
+						font-size: 30px;
+						color: $color-green;
+						-webkit-transition: all 0.3s ease-in-out;
+							-moz-transition: all 0.3s ease-in-out;
+							  -o-transition: all 0.3s ease-in-out;
+								  transition: all 0.3s ease-in-out;
+
+						&:hover,
+						&:focus {
+							color: $color-orange;
+						}
+					}
+
+					&:last-child {
+						padding: 0 0 0 0.5em;
+					}
+				}
+			
 			}
 
 		}
@@ -46,6 +82,7 @@
 		&__main {
 
 			ul {
+				margin: 0.5em 0;
 				padding: 0;
 				text-align: right;
 				display: flex;
@@ -63,12 +100,89 @@
 						text-align: right;
 						font-size: 22px;
 						border-bottom: 3px solid transparent;
+						-webkit-transition: all 0.3s ease-in-out;
+							-moz-transition: all 0.3s ease-in-out;
+							  -o-transition: all 0.3s ease-in-out;
+								  transition: all 0.3s ease-in-out;
 
 						&:hover,
-						&:focus {
+						&:focus,
+						&:active {
 							border-bottom: 3px solid $color-orange;
 						}
 
+					}
+
+					&:last-child {
+						margin: 0 -0.25em 0 0;
+						padding: 0 0 0 0.25em;
+					}
+
+				}
+
+				.current-menu-item a {
+					border-bottom: 3px solid $color-orange;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.nav__mobile {
+	display: none;
+	position: fixed;
+	float: left;
+	z-index: 99999;
+	top: 0;
+	bottom: 0;
+	left: 0px;
+	width: 300px;
+	background: $color-white;
+	padding: 3em 0;
+	overflow-y: scroll;
+	direction: ltr;
+	-webkit-overflow-scrolling: touch;
+	transition: z-index 0s .2s linear, -webkit-transform .2s 0s ease-in-out;
+	transition: z-index 0s .2s linear, transform .2s 0s ease-in-out;
+	transition: z-index 0s .2s linear, transform .2s 0s ease-in-out, -webkit-transform .2s 0s ease-in-out;
+
+	&__close {
+		position: relative;
+	   float: right;
+	   margin: -40px 20px 0;
+	   font-size: 2rem;
+	   color: $color-green;
+	}
+
+	&__main {
+
+		ul {
+			margin: 0 0 1em;
+			padding: 0;
+
+			li {
+				padding: 1em 1em;
+				list-style: none;
+		
+				a {
+					padding: 0.25em 0;
+					font-family: 'VAGrounded', sans-serif;
+					color: $color-green;
+					text-decoration: none;
+					font-size: 22px;
+					border-bottom: 3px solid transparent;
+						-webkit-transition: all 0.3s ease-in-out;
+							-moz-transition: all 0.3s ease-in-out;
+							  -o-transition: all 0.3s ease-in-out;
+								  transition: all 0.3s ease-in-out;
+
+					&:hover,
+					&:focus {
+						border-bottom: 3px solid $color-orange;
 					}
 
 				}
@@ -79,61 +193,51 @@
 
 	}
 
+	&__social {
+		margin: 0.5em 0;
+    	padding: 0 1em;
+    	display: flex;
+		
+		li {
+			padding: 0 1em;
+			list-style: none;
 
-	@media (max-width: $h-mobile){
-		header.header{
-			padding: .2em 0 0.8em 0;
-			height: auto;
-			min-height: 100px;
-				.logo{
-					width: 60%;
-						a{
-								h1{
-									    font-size: 2.5em;
-	    								margin: 0.3em 0;
-								}
-						}
+			a {
+				font-size: 30px;
+				color: $color-green;
+				-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					  -o-transition: all 0.3s ease-in-out;
+						  transition: all 0.3s ease-in-out;
 
+				&:hover,
+				&:focus {
+					color: $color-orange;
 				}
-				.mobile-menu{
-					display: block;
-					float: right;
-				}
-				nav.nav{
-					width: 100%;
-					display: none;
-					margin: 0;
-					overflow: hidden;
-						ul#main-menu{
-							position: relative;		
-							left: 0;
-							margin: 4% 0;
-								li{
-									display: block;
-									padding: 0.2em 0;
-									line-height: 1.3;
-									text-align: center;
-									width: auto;
-									margin: 0;
+			}
 
-									a { 
-										font-size: 1.6em;
-									}
-								}
-						}
-				}
+			&:first-child {
+				padding: 0 1em 0 0;
+			}
+
 		}
+			
 	}
-
-}
-
-.nav__mobile {
 
 }
 
 
 .nav__overlay {
-
+	display: none;
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: $color-gray;
+	opacity: 0.5;
+	transition: z-index 0s .2s linear, opacity .2s 0s ease-in-out;
 }
 
 
@@ -145,17 +249,81 @@
    &__copy {
 
    	a {
+   		margin: 0 0 0 -0.25em;
+   		padding: 0.25em;
+   		border-bottom: 3px solid transparent;
    		color: $color-gray;
+
+   		&:hover,
+	   	&:focus {
+	   		border-bottom: 3px solid $color-orange;
+	   		color: $color-gray;
+	   		text-decoration: none;
+	   	}
+
    	}
 
    }
 
 }
 
-@media all and (max-width: 1280px ) {
+@media all and (max-width: 1280px) {
 	
-	header.header {
-		padding: 1.2em;
+	.header {
+		padding: 1.25em;
+
+		.nav__mobile {
+			display: none;
+		}
+	}
+
+}
+
+@media all and (max-width: $tablet ) {
+
+	.header {
+
+		.nav__desktop {
+
+			&__toggle {
+				display: block;
+			}
+
+			&__social {
+				display: none;
+			}
+
+			&__main {
+				display: none;
+			}
+		}
+
+	}
+
+}
+
+@media all and (max-width: $h-mobile ) {
+
+	.header {
+		
+		&__logo {
+			max-width: 250px;
+
+			a {
+
+				h1 {
+					font-size: 2rem;
+
+					img {
+						width: 100%;
+					}
+
+				}
+			
+			}
+
+		}
+
 	}
 
 }

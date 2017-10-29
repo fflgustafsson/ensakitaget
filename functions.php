@@ -100,17 +100,17 @@ function create_post_type_services()
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
-        'has_archive' => false,
+        'has_archive' => true,
         'supports' => array(
             'title',
             'editor',
-            'excerpt',
             'thumbnail',
             'custom-fields'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies'  => array(),
-        'menu_position' => 5
+        'menu_position' => 5,
+        'rewrite' => array('slug' => 'tjanster')
     ));
 }
 

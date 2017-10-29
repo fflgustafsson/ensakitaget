@@ -6,14 +6,15 @@
 		<article id="post-404">
 
 			<h1>
-				<?php _e( 'Page not found', 'html5blank' ); ?>
+				<?php _e( '404', 'html5blank' ); ?>
 			</h1>
 				
-			<h2>
+			<p>
+				Ojdå, verkar som det inte finns något här...?
 				<a href="<?php echo home_url(); ?>">
-					<?php _e( 'Return home?', 'html5blank' ); ?>
+					<?php _e( 'Till start?', 'html5blank' ); ?>
 				</a>
-			</h2>
+			</p>
 
 		</article>
 			<!-- /article -->

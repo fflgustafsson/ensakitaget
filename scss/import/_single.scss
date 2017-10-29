@@ -33,6 +33,8 @@
 	&__img {
 		overflow: hidden;
 		max-height: 600px;
+		display: flex;
+    	align-items: center;
 
 		img {
 			width: 100%;
@@ -47,6 +49,14 @@
 		width: 100%;
 
 		h1 {
+			text-align: center;
+		}
+
+		&__meta {
+			text-align: center;
+		}
+
+		&__description {
 			text-align: center;
 		}
 

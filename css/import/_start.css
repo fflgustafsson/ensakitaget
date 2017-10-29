@@ -1,0 +1,7 @@
+.start__welcome {
+  max-height: 500px;
+  display: flex;
+  align-items: center; }
+  .start__welcome img {
+    width: 100%;
+    height: auto; }

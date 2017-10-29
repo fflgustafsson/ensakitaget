@@ -19,14 +19,9 @@
 					</h1>
 						<!-- /post title -->
 
-					<div class="single__meta">
-						<span class="category">
-							<?php the_category(','); // Separated by commas ?>
-						</span>
-							
-						<span class="date">
-							<?php the_date(); ?>
-						</span>
+					<div class="single__txt__meta">
+						<span class="date"><?php the_time('H:i'); ?></span> —
+						<span class="cat"><?php the_category( ', '); ?></span>
 					</div>
 
 					<?php the_content(); // Dynamic Content ?>

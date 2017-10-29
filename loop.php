@@ -12,8 +12,8 @@
 				</div>
 
 				<div class="inspiration__article__meta">
-					<div class="cat"><?php the_category( ', '); ?></div>
-					<div class="date"><?php the_date(); ?></div>
+					<span class="date"><?php the_time('H:i'); ?></span> —
+					<span class="cat"><?php the_category( ', '); ?></span>
 				</div>
 
 				<h2><?php the_title(); ?></h2>

@@ -12,10 +12,16 @@
 					<?php endif; ?>
 				</div>
 
-				<div class="single__txtwrapper">
+				<div class="single__txt">
 					<h1>
 						<?php the_title(); ?>
 					</h1>
+
+					<?php if( get_field('service_desc') ): ?>
+						<p class="single__txt__description">
+							<?php the_field('service_desc'); ?>
+						</p>
+					<?php endif ?>
 
 					<?php the_content(); // Dynamic Content ?>
 				</div>

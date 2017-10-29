@@ -3,23 +3,21 @@ use SB\Media;
 get_header();
 ?>
 	
-	<div class="container">
+	<div class="container inspirationWrap">
 
-		<div class="newsfeed">
-
-			<h1 class="title">
-
-				<?php _e( 'Kategorin ', 'html5blank' ); single_cat_title(); ?>
-				
-			</h1>
-			
-			<?php get_template_part('loop'); ?>
-
-			<?php get_template_part('pagination'); ?>
-
+		<div class="inspirationWrap__menu">
+			<?php wp_nav_menu(array('menu' => 'inspiration-menu')); ?>
 		</div>
 
-		<?php get_sidebar(); ?>
+		<h1 class="inspirationWrap__categoryTitle">
+			<?php _e( 'Kategorin ', 'html5blank' ); single_cat_title(); ?>
+		</h1>
+
+		<div class="inspiration">
+			<?php get_template_part('loop'); ?>
+		</div>
+
+		<?php get_template_part('pagination'); ?>
 
 	</div>
 
