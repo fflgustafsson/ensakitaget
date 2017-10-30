@@ -32,6 +32,7 @@ body {
   body p.ingress {
     font-size: 20px; }
   body a {
+    color: #333333;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -305,6 +306,11 @@ body {
   .inspirationWrap .pagination {
     text-align: center;
     margin: 1em 0; }
+    .inspirationWrap .pagination a {
+      color: #333333; }
+    .inspirationWrap .pagination a:hover,
+    .inspirationWrap .pagination a:focus {
+      color: #ff5f00; }
     .inspirationWrap .pagination .page-numbers {
       padding: 0.5em; }
     .inspirationWrap .pagination .current {
