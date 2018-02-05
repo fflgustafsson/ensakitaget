@@ -20,7 +20,7 @@
 						<!-- /post title -->
 
 					<div class="single__txt__meta">
-						<span class="date"><?php the_time('H:i'); ?></span> —
+						<!-- <span class="date"><?php the_time('H:i'); ?></span> — -->
 						<span class="cat"><?php the_category( ', '); ?></span>
 					</div>
 
